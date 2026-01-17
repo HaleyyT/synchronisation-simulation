@@ -1,0 +1,30 @@
+# build artifacts
+sim
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.obj
+*.pch
+*.pdb
+
+# debug / crash
+core
+vgcore.*
+
+# macOS / editors / tooling
+.DS_Store
+*.dSYM/
+.vscode/
+.idea/
+*.swp
+tags
+compile_commands.json
+
+# archives you generate locally
+*.zip
+*.tar
+*.tar.gz
