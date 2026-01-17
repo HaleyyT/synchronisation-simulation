@@ -48,6 +48,7 @@ Run
 ```
 
 **You will be prompted for:**
+
 N: number of students
 
 M: number of groups
@@ -99,16 +100,14 @@ Key synchronization points the program enforces:
 
 **Group assignment handoff:** students block until the teacher assigns their group id.
 
-**Room admission control:** students in a group only enter when:
-
-their group is the next eligible group in order, and a tutor/lab room is available.
+**Room admission control:** students in a group only enter when their group is the next eligible group in order, and a tutor/lab room is available.
 
 **Group-as-a-unit execution:** a tutor starts the exercise only after all students in that group have entered. 
 
 
-Vacate → FIFO availability: after a group leaves, the tutor reports availability and joins a FIFO queue for reassignment. 
+**Vacate → FIFO availability:** after a group leaves, the tutor reports availability and joins a FIFO queue for reassignment. 
 
-Clean shutdown: once no students are waiting, teacher dismisses tutors, then exits; main thread prints the final message. 
+**Clean shutdown:** once no students are waiting, teacher dismisses tutors, then exits; main thread prints the final message. 
 
 
 
